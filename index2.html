@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            border: 4px solid red;
+            width: 300px;
+        }
+        nav>ul{
+            list-style: none;
+            border: 3px solid green;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+       nav>ul>li{
+            border: 2px solid black;
+            width: 150px;
+            text-align: center;
+            font-size: 25px;
+        }
+        .cat{
+            position: relative;
+    
+            visibility: hidden;
+        }
+        .submenu{
+            border: 4px solid red;
+            list-style: none;
+            position: absolute;
+            top: 305%;
+            left: 20%;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 1s linear;
+        }
+        .cat:hover .submenu{
+            top: 110%;
+            opacity: 1;
+            visibility: visible;
+        } 
+        @media (max-width:600px){
+            .cat{
+                visibility: visible;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+
+    
+<nav>
+    <ul>
+        <li>Home</li>
+        <li>Contact</li>
+        <li class="cat">
+            <h1><i class="fa-solid fa-burger"></i></h1>
+            <ul class="submenu">
+                <li>Products1</li>
+                <li>Products2</li>
+                <li>Products3</li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <!-- CSS only -->  
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">   
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"   
+          crossorigin="anonymous">   
+    <title>Document</title> 
+</head> 
+<body> 
+     
+    
+    <div class="container">   
+        <div class="row">   
+          <div class="col s12">   
+            <div id="main" class="card">   
+              <div class="card-content">   
+                <span class="card-title">Task List</span>   
+                <div class="row">   
+                  <form id="task-form" method="post">   
+                    <div class="input-field col s12">   
+                      <input type="text" name="task" id="task" value="Walk the dog">   
+                      <label style="color: blue;" for="task">New Task</label>   
+                    </div>   
+                </div>   
+                <input type="submit" value="Add Task" class="btn">   
+                </form>   
+              </div>   
+              <div class="card-action">   
+                <h5 id="task-title">Tasks</h5>   
+                <ul class="collection">
+                  <li class="collection-item">   
+                    List Item   
+                    <a href="#" class="delete-item secondary-content">   
+                      <i class="fa fa-remove"></i>   
+                    </a>   
+                  </li>
+                  <li class="collection-item">   
+                    List Item   
+                    <a href="#" class="delete-item secondary-content">   
+                      <i class="fa fa-remove"></i>   
+                    </a>   
+                  </li><li class="collection-item">   
+                    List Item   
+                    <a href="#" class="delete-item secondary-content">   
+                      <i class="fa fa-remove"></i>   
+                    </a>   
+                  </li>   
+                  <li class="collection-item">   
+                    List Item   
+                    <a href="#" class="delete-item secondary-content">   
+                      <i class="fa fa-remove"></i>   
+                    </a>   
+                  </li>   
+                  <li class="collection-item">   
+                    List Item   
+                    <a href="#" class="delete-item secondary-content">   
+                      <i class="fa fa-remove"></i>   
+                    </a>   
+                  </li>
+                </ul>   
+                <button class="clear-tasks btn black" href="#">Clear Tasks</button>   
+              </div>   
+            </div>   
+          </div>   
+        </div>   
+      </div>   
+      <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>   
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>   
+
+
+<script>
+
+// let a = document
+
+// a = document.all
+// a = document.head
+// a = document.body
+// a = document.URL
+// a = document.characterSet
+// a = document.contentType
+// a = document.forms
+// a = document.forms.length
+// a = document.forms[0]
+// a = document.head
+// a = document.forms[0].method
+// a = document.forms[0].action
+// a =  document.forms[0].className
+// console.log(a);
+// console.log(typeof a);
+
+// let a = document.all
+// console.log(a);
+// console.log( a instanceof Array );
+
+// let b = [...a]
+// console.log(b);
+
+// let a = document.scripts
+// console.log(a);
+
+// let a = document.links
+// console.log(a);
+// console.log(typeof a);
+
+// // a[1].style.color='yellow'
+// // a[1].style.backgroundColor='black'
+// // a[1].style.padding='5px 10px'
+
+// let b = Array.from(a)
+// console.log(b);
+
+// for(let c=0;c<b.length;c++){
+//     // 0 1 2 3 4
+// if(c%2 !== 0) continue//    
+// // console.log(c);
+// a[c].style.color='yellow'
+// a[c].style.backgroundColor='black'
+// a[c].style.padding='5px 10px'
+// }
+
+//target individual element 
+// get element id
+
+// console.log( document.getElementById('task-title') );
+// console.log( document.getElementById('task-title').id );
+// console.log( document.getElementById('task-title').style.color='aqua' );
+// console.log( document.getElementById('task-title').style.backgroundColor='black' );
+// console.log( document.getElementById('task-title').style.padding='25px 15px' );
+// console.log( document.getElementById('task-title').textContent='GUMMY BEAR' );
+// console.log( document.getElementById('task-title').innerHTML='<span>SWIMMING CLUB</span>' );
+
+//query selector id class tag
+
+let a = document.querySelector('.card-title')
+console.log(a);
+a.textContent='HIMALAYAS'
+a.style.fontWeight='900'
+
+let b = document.querySelector('#task-title')
+console.log(b);
+b.style.backgroundColor='pink'
+
+let c = document.querySelector('label')
+console.log(c);
+c.textContent='ORANGE'
+c.style.fontSize='20px'
+
+let d = document.querySelector('.collection-item')
+console.log(d);
+d.textContent='First CHILD'
+
+let e = document.querySelector('.collection')
+console.log(e);
+e.style.color='red'
+
+let f = document.querySelector('.collection-item:nth-child(5)')
+console.log(f);
+f.style.color='blue'
+
+</script>
+
+<div style="color: aqua;">
+    <h1>ONIOM</h1>
+    <p style="color: black;">Lorem ipsum dolor sit amet.</p>
+</div>
+
+</body>
+</html>
