@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<ul>
+    <li>Chapatis</li>
+    <li>Toritella</li>
+    <li>Bread</li>
+</ul>
+
+// HtmlCollection and NodeList
+
+//1)Html Collection has only one type of node
+//and  Node List has only multiple type of node
+//2) Html Collection are live and node list are Static
+<script>
+
+//HtmlCollection
+
+const lis = document.getElementsByTagName('li')
+console.log(lis);
+// console.log( lis[2] );
+console.log(lis.length);
+
+lis[0].remove()
+
+// Enter new li
+let a = document.createElement('li');
+a.innerText = 'New LISTITEM'
+console.log(a);
+
+let p = document.querySelector('ul')
+console.log(p);
+p.appendChild(a)
+
+console.log(lis);
+// console.log( lis[2] );
+console.log(lis.length);
+
+
+
+//NodeLIst
+
+// const lis = document.querySelectorAll('li')
+// console.log(lis);
+// console.log(lis.length);
+
+
+// // Enter new li
+// let a = document.createElement('li');
+// a.innerText = 'New LISTITEM'
+// console.log(a);
+
+// let p = document.querySelector('ul')
+// console.log(p);
+// p.appendChild(a)
+
+// console.log(lis);
+// console.log(lis.length);
+
+// ARRAY vs HC and Nl
+
+// const lis = document.getElementsByTagName('li')
+// console.log(lis);
+// console.log(lis.length);
+
+// let a = Array.from(lis)
+// console.log(a);
+
+// const lisnl = document.querySelectorAll('li')
+// console.log(lisnl);
+// console.log(lisnl.length);
+
+// let b = Array.from(lisnl)
+// console.log(b);
+
+</script>
+
+</body>
+</html>
